@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node.js</title>
+  <link rel="stylesheet" href="/assets/semantic/semantic.min.css">
+  <style>
+    .main.container{
+      margin: 7em;
+    }
+  </style>
+</head>
+<body>
+  <div class="ui fixed inverted menu">
+    <a href="/" class="header item" >Accueil</a>
+  </div>
+<div class="ui main container">
+  <% if (locals.error) { %>
+  <div class="ui negative message">
+    <%= error %>
+  </div>
+<% } %>
